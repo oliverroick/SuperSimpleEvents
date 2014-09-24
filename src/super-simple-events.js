@@ -49,9 +49,10 @@ var EventEmitter = (function () {
         }
     }
 
-    eventEmitter.prototype.register = register;
-    eventEmitter.prototype.emit = emit;
+    eventEmitter.prototype.registerListener = registerListener;
+    eventEmitter.prototype.emitEvent = emitEvent;
     eventEmitter.prototype.removeListener = removeListener;
+
 
     return eventEmitter;
 }());
