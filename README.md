@@ -2,8 +2,10 @@
 
 Super simple event emitter for JavaScript
 
-<!-- ## Testing
+[![Build Status](https://travis-ci.org/oliverroick/SuperSimpleEvents.svg?branch=master)](https://travis-ci.org/oliverroick/SuperSimpleEvents)
 
-Tests use Jasmine stand-alone. Run the tests by opening `SpecRunner.html` in your browser.
+## Testing
 
-Add new tests to `spec/super-simple-events.js` -->
+```
+npm test
+```
