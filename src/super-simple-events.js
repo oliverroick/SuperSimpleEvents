@@ -1,4 +1,4 @@
-var EventEmitter = (function () {
+module.exports = (function () {
     "use strict";
 
     /**
@@ -52,7 +52,6 @@ var EventEmitter = (function () {
     eventEmitter.prototype.registerListener = registerListener;
     eventEmitter.prototype.emitEvent = emitEvent;
     eventEmitter.prototype.removeListener = removeListener;
-
 
     return eventEmitter;
 }());
