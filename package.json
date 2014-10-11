@@ -1,19 +1,14 @@
 {
-  "name": "SuperSimpleEvents",
-  "author": "Oliver Roick",
-  "version": "1.0.0",
-  "description": "Easily fire events and register event listeners with custom objects",
-  "keywords": [
-    "Events"
-  ],
-  "license": "MIT",
-  "repository": "git://github.com/oliverroick/SuperSimpleEvents",
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jasmine": "^0.8.0"
-  },
-  "scripts": {
-    "test": "grunt travis --verbose"
-  }
+    "name": "SuperSimpleEvents"
+  , "author": "Oliver Roick"
+  , "version": "1.0.0"
+  , "description": "Easily fire events and register event listeners with custom objects"
+  , "keywords": [
+         "Events"
+    ]
+  , "license": "MIT"
+  , "repository": "git://github.com/oliverroick/SuperSimpleEvents"
+  , "dependencies": {
+        
+    }
 }
