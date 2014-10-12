@@ -37,7 +37,7 @@ describe('Super simple events', function () {
         }
         eventEmitter.registerListener('event', function () {
             obj.callMe();
-        })
+        });
         spyOn(obj, 'callMe');
         eventEmitter.emitEvent('event');
         expect(obj.callMe).toHaveBeenCalled();

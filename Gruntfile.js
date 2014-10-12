@@ -5,15 +5,31 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         jasmine: {
-            components: {
-              src: [
-              'src/*js'
-              ],
+          components: {
+            src: [
+            'src/*.js'
+            ],
+            options: {
+              specs: 'tests/*.js',
+              keepRunner : true
+              }
+          },
+          coverage: {
+              src: ['src/*.js'],
               options: {
-                specs: 'tests/*.js',
-                keepRunner : true
-                }
-            }
+                  specs: ['tests/*.js'],
+                  template: require('grunt-template-jasmine-istanbul'),
+                  templateOptions: {
+                      coverage: 'coverage/coverage.json',
+                      report: {
+                        type: 'lcov',
+                        options: {
+                            dir: 'coverage'
+                        }
+                      }
+                  }
+              }
+          }
         }
     });
 

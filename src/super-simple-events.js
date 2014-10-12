@@ -53,6 +53,5 @@ var EventEmitter = (function () {
     eventEmitter.prototype.emitEvent = emitEvent;
     eventEmitter.prototype.removeListener = removeListener;
 
-
     return eventEmitter;
 }());
